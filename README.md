@@ -6,6 +6,8 @@ English | [简体中文](https://github.com/zchengsite/hexo-theme-oranges/blob/m
 
 [demo](https://hexo.theme.oranges.zcheng.site/)
 
+This fork/branch has been modified to my own needs, please see the original at [https://github.com/zchengsite/hexo-theme-oranges](https://github.com/zchengsite/hexo-theme-oranges)
+
 ## Installation
 
 ```bash
