@@ -1,14 +1,22 @@
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+
 <div class="header">
   <div class="avatar">
     <a href="<%- theme.avatar.path %>">
       <!-- 头像取消懒加载，添加no-lazy -->
       <% if (config.lazyload && config.lazyload.enable) { %>
-        <img no-lazy src="<%- theme.avatar.author_photo %>" alt="">
+        <img id="author_photo" no-lazy src="<%- theme.avatar.author_photo_dark %>" alt="">
       <% } else { %>
-        <img src="<%- theme.avatar.author_photo %>" alt="">
+        <img id="author_photo" src="<%- theme.avatar.author_photo_dark %>" alt="">
       <% } %>
     </a>
     <div class="nickname"><a href="<%- theme.avatar.path %>"><%- theme.avatar.author_nickname %></a></div>
+    <div class="sub-nickname"><%- theme.avatar.author_sub_nickname %></div>
   </div>
   <div class="navbar">
     <ul>
